@@ -1,0 +1,110 @@
+<!-- Forms in HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <!-- action means name of the backend file -->
+    <form action="backend.php">
+
+        <!-- div tag is used to create a division
+        The <label> tag is used to specify a label for an <input> element of a form 
+        Label identifies which input type with the help of value in id so value of id is put in for-->
+
+        Press E if you are a Engineer<input type="button" name="mybutton" value="E"><br>
+        <label for="mytext">Name</label>
+        <div>
+            <input type="text" name="mytext" id="mytext">
+        </div><br>
+        <div>
+            Are you from India<input type="checkbox" name="mycheckbox">
+        </div><br>
+        <div>
+            Enter password<input type="password" name="mypassword">
+        </div><br>
+        <div>
+            Gender<br>
+            Male<input type="radio" name="myradio">
+            Female<input type="radio" name="myradio">
+            Rather not say<input type="radio" name="myradio">
+        </div><br>
+        <div>
+            Enter dob<input type="date" name="mydate">
+        </div><br>
+        <div>
+            Choose colour<input type="color" name="mycolor">
+        </div><br>
+        <div>
+            Enter date and time<input type="datetime" name="mydatetime">
+        </div><br>
+        <div>
+            Enter date and time-local<input type="datetime-local" name="mydatetime-local">
+        </div><br>
+        <div>
+            Enter email<input type="email" name="mymail">
+        </div><br>
+        <div>
+            Upload file<input type="file" name="myfile">
+        </div><br>
+        <div>
+            This is hidden<input type="hidden" name="myhidden">
+        </div><br>
+        <div>
+            Go ahead if needed<br> <input type="image" src="img_submit.jpg" alt="Submit" width="98" height="120">
+        </div><br>
+        <div>
+            Enter month of birth<input type="month" name="mymonth">
+        </div><br>
+        <div>
+            Enter marks<input type="number" name="mynumber">
+        </div><br>
+
+        <div>
+            Salary expectations<input type="range" name="myrange" min="10000" max="2000000000">
+        </div><br>
+        <div>
+            Degree<input type="search" name="mysearch">
+        </div><br>
+
+        <div>
+            Enter telephone number<input type="tel" name="mytel">
+        </div><br>
+
+        <div>
+            Enter time of interview<input type="time" name="mytime">
+        </div><br>
+        <div>
+            Enter github url<input type="url" name="myurl">
+        </div><br>
+        <div>
+            Enter working weeks<input type="week" name="myweek">
+        </div><br>
+        <div>
+            Write about yourself: <br><textarea name="mybio" cols="30" rows="10"></textarea>
+        </div><br>
+        <label for="car">your car</label>
+        <div>
+            <select name="car">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Maruti">Maruti</option>
+        </select>
+        </div><br>
+        <div>
+            <input type="submit" name="mysubmit">
+        </div><br>
+        <div>
+            <input type="reset" name="my reset">
+        </div><br>
+
+    </form>
+</body>
+
+</html>
