@@ -1,0 +1,77 @@
+<!-- Alignment -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Took from google fonts -->
+    <style>
+        .items{
+            border: 3px solid;
+            background-color: aliceblue;
+            margin: 3px 12px;
+            padding: 3px 12px;
+
+        }
+
+        .container{
+            width: 900px;
+            border: 5px solid purple;
+            /* margin: auto;   margin auto places the text automatically in the middle(x direction only) */
+            margin: 33px auto;
+            font-family: 'Blaka', cursive;
+            background-color: aqua;
+        }
+
+        #fruit{
+
+            float: left;
+            width: 43%;
+        }
+
+        #computer{
+
+            float: left;
+            width: 43%;
+        }
+
+        #stationary{
+            /* clear won't let float left and right bother it,so no overlapping will happen */
+            clear: both;
+            width: 90%;
+        }
+
+        p,h1{
+            text-align: left;
+            text-align: right;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div class="items" id="fruit">
+            <h1>Fruits</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, animi quam quo quibusdam perferendis ipsam obcaecati ea. Labore veniam provident debitis rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, aliquid quidem? Omnis quae deserunt incidunt minima eligendi suscipit obcaecati eveniet saepe sapiente quisquam libero recusandae voluptatum, iusto ipsum, ut ducimus eum quam illum nesciunt. </quo></p>
+        </div>
+
+        <div class="items" id="computer">
+            <h1>Computer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, animi quam quo quibusdam perferendis ipsam obcaecati ea. Labore veniam provident debitis rem quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus debitis accusamus ab rem asperiores assumenda perspiciatis mollitia deleniti tempora quod aut, corrupti, cupiditate nesciunt ducimus at officiis atque recusandae, reprehenderit earum. Rem, pariatur mollitia! </p>
+        </div>
+
+        <div class="items" id="stationary">
+            <h1>stationary</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, animi quam quo quibusdam perferendis ipsam obcaecati ea. Labore veniam provident debitis rem quo.</p>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
