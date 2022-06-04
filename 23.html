@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 100%;
+            height: 500px;
+            /* To use flexbox */
+            display: flex;
+            /*initialization as flexbox*/
+            /*Container becomes flex and its inside items too*/
+
+            /* Flex properties */
+
+            /* flex-direction: which is by default row */
+            /* flex-direction: row;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse; */
+
+            /* responsivness is bad so far because if we decrease screen size then boxes wont be visible,so we use wrap property so that boxes go to next line in case of small screen size */
+
+            /* flex-wrap: nowrap; default */
+            flex-wrap: wrap;
+
+            /* shortcut to use both wrap and direction together is flex flow */
+            /* flex-flow: column wrap-reverse; */
+
+            /* wrap reverse:boxes go to above line instead of next line */
+            /* flex-wrap: wrap-reverse; */
+
+            /* Justify property helps align in x direction */
+            justify-content: center;
+
+            /*Bring values to the center */
+            /* justify-content: end; */
+
+            /* space-between Items will have space between them 
+            space-around Items will have space before,between,
+            and after them 
+            space-evenly Items will have equal space around them */
+
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+            /* align property aligns in y direction*/
+
+            align-items: center;
+            /* Brings element to center in both x and y direction */
+            align-items: flex-end;
+            align-items: flex-start;
+            /* default value */
+            align-items: stretch;
+            /* creates space evenly in y direction between boxes */
+
+        }
+
+        .items {
+            border: 2px solid yellow;
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+            margin: 12px;
+            padding: 12px;
+        }
+
+        #items1 {
+            flex-grow: 3;
+        }
+
+        #items2 {
+            /* higher the order,the more late the box is diaplyed */
+            order: 2;
+        }
+
+        #items3 {
+            flex-shrink: 3;
+            flex-basis: 300px;
+            /* flex basis can control the width when flex direction is row */
+            /* flex basis can control the height when flex direction is column */
+        }
+
+        #items4{
+            /* syntax flex: grow shrink basis */
+            flex:2 2 300px;
+        }
+
+        #items5{
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox code</h1>
+
+    <div class="container">
+        <!-- .items#items$*6  //shortcut-->
+        <div class="items" id="items1">FIRST</div>
+        <div class="items" id="items2">SECOND</div>
+        <div class="items" id="items3">THIRD</div>
+        <div class="items" id="items4">FOURTH</div>
+        <div class="items" id="items5">FIFTH</div>
+    </div>
+
+</body>
+
+</html>
