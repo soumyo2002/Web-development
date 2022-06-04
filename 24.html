@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em,rem,vh,vw</title>
+
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .container{
+            border: 2px solid black;
+            /* width: 200px;
+            height: 200px; */
+            width: 100vw; 
+            height: 100vh;
+
+            /* vh and vw will cover the entire page */
+        }
+        #head2{
+            color: blue
+            /* font-size: 4em;       4em=4(font-size) i.e 4*10px=40px
+            padding: 3em;            3em=3(font-size) i.e 3*40=120px */
+        }
+        #head1{
+            color: brown;
+            /* font-size: 4rem;      4rem=4(font-size) i.e 4*10px=40px
+            padding: 3rem;           3rem=3(font-size) i.e 3*10=30px */
+
+            /* rem vs em
+            with em, the unit is relative to the font size of its parent element, while the rem unit is only relative to the root font size of the HTML document  */
+        }
+
+        
+    </style>
+</head>
+<body>
+        <div class="container">
+            <h1 id="head1">First</h1>
+            <h1 id="head2">Second</h1>
+            <h1 id="head3">Third</h1>
+        </div>
+</body>
+</html>
