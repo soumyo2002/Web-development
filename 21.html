@@ -1,0 +1,79 @@
+<!-- Positioning in CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .container {
+            border: 4px solid black;
+            height: 1200px;
+        }
+
+        .box {
+            border: solid red;
+            background-color: bisque;
+            display: inline-block;
+            width: 130px;
+            height: 100px;
+            margin: 2px;
+        }
+
+        /* Absolute */
+        #box2 {
+            /* RELATIVE TO THE POSITION OF THE PARENT ELEMENT OR THE PAGE*/
+            position: absolute;
+            top: 12px;
+            left: 56px;
+        }
+
+        /* Relative */
+        #box3 {
+            /* RELATIVE TO IT'S ACTUAL POSITION AND LEAVES A GAP */
+            position: relative;
+            top: 20px;
+            left: 15px;
+        }
+
+        /* fixed */
+        #box4 {
+            position: fixed;
+            right: 4px;
+            bottom: 4px;
+            /* Scroll down  and still it will be fixed*/
+        }
+
+        /* Sticky */
+        #box5 {
+            /* It is a hybrid of relative and fixed position. An HTML element with position: sticky;
+            will just sit there until a given position offset is met. */
+            position: sticky; 
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Types of positioning in CSS:
+    1)Static(By default)
+    2)Absolute
+    3)Relative
+    4)Fixed
+    5)Sticky -->
+
+    <div class="container">
+        <div class="box" id="box1">Static</div>
+        <div class="box" id="box2">Absolute</div>
+        <div class="box" id="box3">Relative</div>
+        <div class="box" id="box4">Fixed</div>
+        <div class="box" id="box5">Sticky</div>
+    </div>
+
+</body>
+
+</html>
