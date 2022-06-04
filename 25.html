@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+
+    <style>
+        .screen{
+            font-size: 150px;
+            text-align: center;
+            /* display none will hide all the elements */
+            display: none;
+        }
+
+        /* media is declared outside the tag */
+        /* media is like if else,if condition is true then the corresponding element will be shown */
+        @media only screen and (max-width: 600px){
+        #screen1{
+            background-color: blueviolet;
+            color: aqua;
+            display: block;
+        }
+    }
+        @media only screen and (min-width: 601px) and (max-width: 1200px){
+        #screen2{
+            background-color: black;
+            color: white;
+            display: block;
+        }
+    }
+        @media only screen and (min-width: 1201px) and (max-width: 1500px){
+        #screen3{
+            background-color: chartreuse;
+            color: black;
+            display: block;
+        }
+    }
+        @media only screen and (min-width: 1501px){
+        #screen4{
+            background-color: red;
+            color: yellow;
+            display: block;
+        }
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="screen" id="screen1">Iphone screen</div>
+    <div class="screen" id="screen2">Ipad screen</div>
+    <div class="screen" id="screen3">Desktop screen</div>
+    <div class="screen" id="screen4">wide screen</div>
+
+</body>
+</html>
