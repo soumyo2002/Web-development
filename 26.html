@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more concepts of selectors</title>
+
+    <style>
+
+        /* div, p	Selects all <div> elements and all <p> elements
+        div p	Selects all <p> elements inside <div> elements
+        div li p Selects <p> elements inside <li> which is inside <div>
+        div > p	Selects all <p> elements where the parent is a <div> element
+        div + p	Selects the first <p> element that is placed affects contents which are inside p,after li and inside div */
+
+        
+
+        div,p{
+            color: blueviolet;
+        }
+
+        div p{
+            color: brown;
+        }
+        /* affects contents which are inside p,after li and inside div */
+        div li p {
+            background-color: aqua;
+            color: red;
+            font-size: 20px;
+        }
+
+        /* affects contents in the p tag if it is INSIDE div tag  */
+        div > p{
+            background-color: black;
+            color: white;
+            font-size: 30px;
+        }
+
+        /* affects all p tags who exactly previous tag is div tag  */
+        div + p{
+            background-color: chartreuse;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div><p>Hello world</p></div>
+    <div class="outside">
+        <p>below are lists:</p>
+        <ol>
+            <li>This is first</li>
+            <li>This is second</li>
+            <li>
+                <p>This is third</p>
+            </li>
+        </ol>
+    </div>
+
+</body>
+
+</html>
