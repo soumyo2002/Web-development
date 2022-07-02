@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow in CSS</title>
+</head>
+
+<style>
+    .contents {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box {
+        /* border: 2px solid red; */
+        box-shadow: 10px 12px violet;  /*box-shadow: x-offset y-offset color; */
+        box-shadow: -10px -12px violet;  /* +y is for underlying shadow and -y is for upper layer shadow */
+        box-shadow: -10px -12px violet;  /* +x is for right shadow and -x is for left shadow */
+        box-shadow: 10px 12px 10px violet;  /* box-shadow: x-offset y-offset blur-radius color; */
+        box-shadow: 10px 12px 10px 10px rgba(128,56,77,0.7);  /* box-shadow: x-offset y-offset blur-radius spread-radius color; alpha takes care of the darkness*/
+        box-shadow: inset 77px 77px green; /*Shadow enters the box */
+        box-shadow: 12px 12px red,30px 30px gold; /*multiple colours */
+        margin: 12px 12px;
+        padding: 12px 12px;
+        background-color: aqua;
+    }
+
+    h1{
+        /* +y is for underlying shadow and -y is for upper layer shadow +x is for right shadow and -x is for left shadow*/
+        text-shadow: 2px 2px white; 
+        text-shadow: -2px -2px white;
+        text-shadow: 2px 2px 2px white; /* x-offset y-offset blur offset color */
+    }
+</style>
+
+<body>
+
+    <div class="contents">
+        <div class="box" id="box1">
+            <h1>Box 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem commodi aperiam libero cum
+                exercitationem harum, adipisci debitis autem fuga possimus corrupti quibusdam, reprehenderit molestiae
+                itaque nostrum delectus illum? Nostrum incidunt repudiandae alias distinctio.
+            </p>
+        </div>
+        <div class="box" id="box2">
+            <h1>Box 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem commodi aperiam libero cum
+                exercitationem harum, adipisci debitis autem fuga possimus corrupti quibusdam, reprehenderit molestiae
+                itaque nostrum delectus illum? Nostrum incidunt repudiandae alias distinctio.
+            </p>
+        </div>
+        <div class="box" id="box3">
+            <h1>Box 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem commodi aperiam libero cum
+                exercitationem harum, adipisci debitis autem fuga possimus corrupti quibusdam, reprehenderit molestiae
+                itaque nostrum delectus illum? Nostrum incidunt repudiandae alias distinctio.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after</title>
+
+    <style>
+        html {
+            color: black;
+            font-weight: 200;
+            /* cover resizes the background such that it completely covers the frame (which may clip the top or sides of the image) */
+
+            /* background: url('//source.unsplash.com/random') no-repeat center center/cover; */
+
+
+            /* Now background-image will keep changing os there is a chance that my text cannot read,so we will use opacity to control it*/
+        }
+
+
+        header::before{
+            /* background image url */
+            background: url('//source.unsplash.com/random') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            /* z-index: -1; ensures that background picture comes after the text.else the texxt would get hidden */
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 200px;
+            justify-content: center;
+        }
+
+        /* section::before {
+            content: "This is added before the paragraph";
+        }
+
+        section::after {
+            content: "This is added after the paragraph";
+        } */
+
+        .nav {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 12px 12px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="head">
+            <ul class="nav">
+                <li class="list"><a href="#">Home</a></li>
+                <li class="list"><a href="#">About us</a></li>
+                <li class="list"><a href="#">contact us</a></li>
+                <li class="list"><a href="#">email us</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+        <section>
+            <h1>Hello world</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, aut ipsum iste eligendi doloremque
+                nihil, voluptatum dignissimos illum, assumenda iusto tempore laudantium eius voluptates fugit
+                facilis
+                officiis unde. Eveniet alias, incidunt optio animi repellat atque eligendi minus delectus corrupti
+                ad.
+            </p>
+        </section>
+        <hr>
+
+</body>
+
+</html>

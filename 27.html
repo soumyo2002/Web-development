@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child psuedo</title>
+    <style>
+        
+        .container{
+            display: block;
+            width: 40px;
+            margin: auto;
+        }
+
+        a[target]{
+            color: gold;
+        }
+        a[target="_self"]{
+            color: chartreuse;
+        }
+
+        input[type="text"]{
+            background-color: black;
+        }
+        input[type="number"]{
+            border: 2px solid red;
+        }
+
+        /* 2n=2,4,6,8 */
+        li:nth-child(2n){
+           color: greenyellow;
+        }
+        /* 3n+3=3,6,9 */
+        li:nth-child(3n+3){
+            font-size: 30px;
+        }         
+        li:nth-child(odd){
+            color: blue;
+        }
+        li:nth-child(even){
+            color: darkcyan;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2><a href="https://www.google.com" target="_blank">Google</a></h2>
+        <h2><a href="https://www.facebook.com" target="_self">facebook</a></h2>
+
+        <form>
+            <input type="text" placeholder="name">
+            <input type="number" placeholder="age">
+            <input type="email" placeholder="email">
+        </form>
+
+        <ol>
+            <li class="list" id="list1">first</li>
+            <li class="list" id="list2">second</li>
+            <li class="list" id="list3">third</li>
+            <li class="list" id="list4">fourth</li>
+            <li class="list" id="list5">fifth</li>
+            <li class="list" id="list6">sixth</li>
+            <li class="list" id="list7">seventh</li>
+            <li class="list" id="list8">eighth</li>
+            <li class="list" id="list9">ninth</li>
+            <li class="list" id="list10">tenth</li>
+        </ol>
+    </div>
+</body>
+
+</html>

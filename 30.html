@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables & Custom Properties</title>
+
+    <style>
+        :root{
+            --primary-color: yellow;
+            --danger-color: red;
+            --bgm-color: aqua;
+            --max-width: 300px;
+
+        }
+        .box{
+            flex-direction: row;
+            margin: 12px 12px;
+            padding: 12px 12px;
+            width: 85px;
+            height: 80px;
+
+            /* background-color: blueviolet; */
+
+            --box-color: blueviolet;/* syntax to create variable: 
+            --variablename: property; */
+
+            /* syntax to use variable:
+            var(--variablename); */
+            background-color: var(--box-color);
+
+            border: 2px solid var(--danger-color);
+        }
+        .container{
+            display: flex;
+            border: 2px solid var(--primary-color);
+            width: var(--max-width);
+            background-color: var(--bgm-color);
+            margin: 12px auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+    </div>
+
+</body>
+</html>
