@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /* creates column with the given spacing */
+            grid-template-columns: 200px 400px 200px;
+            grid-template-columns: 200px 400px auto;
+            /* grid-template-columns: repeat(no of cols,space); */
+            grid-template-columns: repeat(3,200px);
+            /* divides the screen in the ratio 1:3:2 and then allocates space between columns*/
+            grid-template-columns: 1fr 3fr 2fr;
+            grid-template-columns: 2fr 2fr 2fr;
+        }
+        .items{
+            margin: 3px;
+            padding: 10px;
+            background-color: aqua;
+            height: 50px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="items1">items1</div>
+        <div class="items" id="items2">items2</div>
+        <div class="items" id="items3">items3</div>
+        <div class="items" id="items4">items4</div>
+        <div class="items" id="items5">items5</div>
+        <div class="items" id="items6">items6</div>
+        <div class="items" id="items7">items7</div>
+        <div class="items" id="items8">items8</div>
+        <div class="items" id="items9">items9</div>
+        <div class="items" id="items10">items10</div>
+        <div class="items" id="items11">items11</div>
+        <div class="items" id="items12">items12</div>
+        <div class="items" id="items13">items13</div>
+        <div class="items" id="items14">items14</div>
+        <div class="items" id="items15">items15</div>
+        <div class="items" id="items16">items16</div>
+        <div class="items" id="items17">items17</div>
+        <div class="items" id="items18">items18</div>
+        <div class="items" id="items19">items19</div>
+        <div class="items" id="items20">items20</div>
+    </div>
+</body>
+
+</html>

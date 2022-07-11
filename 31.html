@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animations & Keyframes</title>
+
+    <style>
+        :root{
+            --color-1: red;
+            --color-2: blue;
+            --color-3: violet;
+            --color-4: aqua;
+            --color-5: black;
+            --color-6: gold;
+            --n: 12px;
+
+        }
+        .container{
+            display: flex;
+            background-color: var(--color-4);
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: var(--color-6);
+            color: var(--color-1);
+            border: 2px solid rebeccapurple;
+
+            /* without this many animations wont work */
+            position: relative;
+            /* name of animation */
+            /* animation-name: soumyo; */
+            /* duration of animation  */
+            /* animation-duration: 8s; */
+            /* no of times it happens */
+            /* animation-iteration-count: 3; */
+            /* it will stay where it last stopped */
+            /* animation-fill-mode: forwards; */
+            /* fast-slow */
+            /* animation-timing-function: ease-in; */
+            /* slow-fast */
+            /* animation-timing-function: ease-out; */
+            /* slow-fast-slow */
+            /* animation-timing-function: ease-in-out; */
+
+            /* waits for sometime */
+            /* animation-delay: 3s; */
+
+            /* shorthand: animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: soumyo 2s ease-in 2s 2 alternate forwards; */
+
+            animation-name: soumyo1;
+            animation-duration: 6s;
+            animation-iteration-count: 1;
+            animation-delay: 3s;
+
+        }
+
+        /* creating animation */
+        @keyframes soumyo{
+            from{
+                width: 100px;
+            }
+            to{
+                width: 700px;
+            }
+        }
+
+        @keyframes soumyo1{
+
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 0;
+                left: 100px;
+            }
+            50%{
+                top: 100px;
+                left: 100px;
+            }
+            75%{
+                top: 100px;
+                left: 0;
+
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is a box</div>
+    </div>
+</body>
+</html>

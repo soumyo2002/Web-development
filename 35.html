@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating proper grid</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: chartreuse;
+            margin: 12px;
+            border: 4px solid red;
+            border-radius: 12px;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: 2fr 2fr 2fr;
+            grid-auto-rows: 25fr;
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-gap: 1rem;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- shorthand:
+        .box#box${this is box$} -->
+        <div class="box" id="box1">this is box1</div>
+        <div class="box" id="box2">this is box2</div>
+        <div class="box" id="box3">this is box3</div>
+        <div class="box" id="box4">this is box4</div>
+        <div class="box" id="box5">this is box5</div>
+        <div class="box" id="box6">this is box6</div>
+        <div class="box" id="box7">this is box7</div>
+        <div class="box" id="box8">this is box8</div>
+        <div class="box" id="box9">this is box9</div>
+    </div>
+
+</body>
+
+</html>

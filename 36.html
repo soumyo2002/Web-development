@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning in grid</title>
+
+    <style>
+        .box {
+            border: 2px solid black;
+            background-color: orangered;
+            margin: 12px;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            /* new way to produce gaps in CSS,grid gap is obsolute */
+            -gap: 1rem;
+        }
+
+        .box:first-child {
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* SYNTAX for shorthand
+            grid-column: 1 / span (no of boxes); */
+            grid-column: 1/span 2;
+            grid-row: 1/span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">BOX3</div>
+        <div class="box" id="box4">BOX4</div>
+        <div class="box" id="box5">BOX5</div>
+        <div class="box" id="box6">BOX6</div>
+        <div class="box" id="box7">BOX7</div>
+        <div class="box" id="box8">BOX8</div>
+        <div class="box" id="box9">BOX9</div>
+        <div class="box" id="box10">BOX10</div>
+        <div class="box" id="box11">BOX11</div>
+        <div class="box" id="box12">BOX12</div>
+        <div class="box" id="box13">BOX13</div>
+        <div class="box" id="box14">BOX14</div>
+        <div class="box" id="box15">BOX15</div>
+    </div>
+</body>
+
+</html>
