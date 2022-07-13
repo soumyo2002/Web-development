@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid+media queries</title>
+    <style>
+        .container {
+            background-color: aqua;
+            display: grid;
+            grid-template-areas:
+                'nav nav nav nav'
+                'main main main side'
+                'foot foot foot foot'
+            ;
+        }
+
+        .content {
+            border: 2px solid black;
+            margin: 12px;
+        }
+
+        .foot {
+            display: block;
+            align-items: center;
+        }
+
+        .navbar {
+            grid-area: nav;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .side {
+            grid-area: side;
+        }
+
+        .foot {
+            grid-area: foot;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (max-width:800px) {
+            .container {
+                background-color: red;
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'main main main main'
+                    'side side side side'
+                    'foot foot foot foot'
+                ;
+            }
+            .side{
+                display: none;
+            }
+            span{
+                display: block;
+            }
+            }
+
+        @media only screen and (min-width:801px) and (max-width:1500px) {
+            .container {
+                background-color: blue;
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'main main main main'
+                    'side side side side'
+                    'foot foot foot foot'
+                ;
+            }
+            span{
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width:1501px) and (max-width:2000px) {
+            .container {
+                background-color: green;
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'main main main main'
+                    'side side side side'
+                    'foot foot foot foot'
+                ;
+            }
+        }
+
+        @media only screen and (min-width:2001px) {
+            .container {
+                background-color: cyan;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar content">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span>
+            <span>Fees</span>
+        </div>
+        <div class="main content">
+            <h2>About the course</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem incidunt dolorem earum repellat.
+            Delectus modi ipsa eligendi dolorem dolore voluptate! Eligendi unde quisquam ipsum ad doloremque repellendus
+            voluptatum omnis eveniet ut libero ullam enim nulla quasi laborum nemo sequi id iure asperiores cum vero,
+            dolorum eius ratione sapiente quia. Ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            eaque dicta quo cupiditate corrupti. Quam delectus maxime soluta minus alias repellat necessitatibus
+            perspiciatis accusamus. Minima provident veniam, dolorum nemo, corporis, ab magnam nostrum delectus neque
+            eum totam nam adipisci nihil tempore illum quae odio dolores? Voluptatum dolor nesciunt cumque odit porro?
+            Minus, itaque repudiandae. Sint enim quod minus esse sequi odit, eligendi nemo beatae fugiat itaque odio non
+            ratione rerum!lorem100 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nam error facilis
+            vitae cumque ipsum numquam? Nostrum, optio possimus incidunt eum quis, aliquid praesentium tempore nesciunt
+            molestiae deserunt nam sapiente facilis veniam quos architecto numquam commodi accusamus ullam maiores quas
+            in neque? Quidem laborum atque, a incidunt odio officiis eligendi harum. Consequuntur consectetur cum totam
+            ad dolor nihil impedit fugiat, recusandae veniam? Numquam voluptatibus pariatur ea officiis saepe dolorum
+            vitae eaque incidunt mollitia quod eveniet, a nulla ut corporis minus. Provident blanditiis explicabo magni,
+            officiis illo quod quidem voluptates, pariatur eaque, a esse exercitationem modi! Dolores atque porro ullam.
+            Obcaecati?
+        </div>
+        <div class="side content">
+            <h2>brochure</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nobis molestias quae, nostrum quo consectetur
+            aliquam in voluptates! Iste eius suscipit nisi? Animi, tenetur aliquam. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ducimus delectus tempora eligendi maiores voluptate laborum praesentium.
+            Facilis, iure provident sint nobis enim hic cumque et fuga laudantium esse laborum nisi? Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Totam officiis, distinctio ipsam adipisci fugit molestias omnis
+            aspernatur repellendus accusamus modi explicabo harum voluptates quae deleniti, excepturi commodi assumenda
+            aliquid, vero eius iste exercitationem consequatur doloribus dolorem error. Reprehenderit molestiae vel in,
+            asperiores veniam, minus voluptates recusandae perferendis a provident velit, laborum iste voluptate
+            voluptatum minima tenetur aspernatur pariatur eligendi molestias!
+        </div>
+        <div class="foot content">
+            Copyright Soumyo 2022
+        </div>
+    </div>
+</body>
+
+</html>

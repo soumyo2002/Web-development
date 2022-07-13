@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Autofit & MinMax </title>
+    <style>
+        .box {
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 20px;
+
+        }
+        .contain{
+            display: grid;
+            /* using autofit we can make the website responsive */
+            grid-template-columns: repeat(auto-fit,minmax(30px,1fr));
+            grid-template-rows: repeat(3,100px);
+            gap: 12px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- automax and automin is used for responsiveness -->
+    <div class="contain">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+        <div class="box">BOX4</div>
+        <div class="box">BOX5</div>
+        <div class="box">BOX6</div>
+        <div class="box">BOX7</div>
+        <div class="box">BOX8</div>
+        <div class="box">BOX9</div>
+    </div>
+</body>
+
+</html>
