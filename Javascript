@@ -1,0 +1,17 @@
+1)Javascript is also known as client side scripting language which means data is processed from client-side. For example,if we want user to enter data and press submit
+then Javascript helps in processing that data
+
+2)It can perform actions on the website like basic calculations.
+
+3)We can use Javascript as a client as well as server side language
+
+4)What javascript can do in-browser:
+
+i)Add new HTML element and control it
+ii)React to events like when submit button clicked
+iii)Get and set cookies for faster use
+
+5)What javascript can't do in-browser:
+
+i)It must be secure and must no be given low level CPU access rights.The code runs on BROWSER and NOT on our MACHINE
+ii)
