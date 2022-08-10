@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <div id="id"></div>
+    <div class="content">
+        <h2>Strings in JS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptatum veritatis debitis, dolor eius quod expedita beatae blanditiis? Deleniti reprehenderit voluptatem hic magni praesentium? Quidem voluptate cum nesciunt at hic! Hic ullam sint reprehenderit!</p>
+    </div>
+    <script>
+        var fname="Soumyo";
+        var lname="Chakravorty"
+        //using + for concatenation
+        console.log("Author: "+fname+" "+lname);
+
+        // use "" when you want to print ''
+        var print1="Welcome to Soumyo's 'web developement codes'.";
+        // use '' when you want to print ""
+        var print2='I am a "Computer Engineering student"';
+        // \n is an escape sequence to go to next line.
+        console.log(print1+"\n"+print2);
+
+        var college="KIIT";
+        //${} is used to print value of variable
+        // use `` if you want to print VALUE OF THE VARIABLE with string
+        //`` supports both "" and ''
+        var mssg=`${fname} is a student of ${college} and hails from "Kolkata" and is a 'tech enthusiast' \nThank you`;
+        console.log(mssg);
+
+        //finding length of string
+        var len=fname.length;
+        console.log(`Length of my name = ${len} `);
+        console.log("Length of my name = "+len);
+
+        //Controlling HTML elements from javascript
+        document.getElementById('id').innerHTML= "<h1>Welcome to Soumyo's web dev codes";
+    </script>
+</body>
+</html>
