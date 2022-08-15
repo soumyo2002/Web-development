@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions</title>
+</head>
+<body>
+    <p>Hello!</p>
+    <script>
+        var s="Hello!This is Soumyo";
+        var i=s.indexOf('is');
+        console.log(i);
+
+        i=s.lastIndexOf('is');
+        console.log(i);
+
+        // slice vs substr:
+        // slice extracts the string from the starting to (ending index-1)
+        // substr extracts the string from the starting index to (starting index+no of positions to be covered)
+
+        var s1=s.slice(1,6);
+        console.log(s1);
+        s1=s.substr(1,8);
+        console.log(s1);
+
+        s1=s.replace("Soumyo","Mr.Chakravorty");
+        console.log(s);
+        console.log(s1);
+        console.log(s.toLowerCase());
+        console.log(s.toUpperCase());
+        console.log(s.concat(s1));
+
+        var space="   Hello     and Wel come  ";
+        console.log(space);
+
+        //trim removes space from beginning and end
+        console.log(space.trim());
+
+        console.log(s.charAt(6));
+    </script>
+</body>
+</html>
