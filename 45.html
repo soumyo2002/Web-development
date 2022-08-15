@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If else</If-else></title>
+</head>
+<body>
+    <div class="p">Hello</div>
+    <script>
+        // var is global so using same variable twice can cause problem so we use let as it will show the error
+        // This will show error due to reuse
+        // let a=6;
+        // console.log(a);
+        // let a=8;
+        // console.log(a);
+
+        let a=6;
+        console.log(a);
+
+        //local scope
+        {
+            let a=9;
+            console.log(a);
+        }
+
+        const s="This cannot change";
+        console.log(s);
+        
+        // will show error
+        // s="Change it";
+        // console.log(s);
+        
+        let age=31;
+        if(age>18)
+        console.log("can vote");
+        else
+        console.log("can't vote");
+
+        const cup=1;
+        switch(cup){
+            case 1:
+                console.log("Can drink");
+                break;
+            case 2:
+                console.log("Can't drink");
+                break;
+            default:
+                console.log("Default");
+        }
+
+    </script>
+</body>
+</html>
